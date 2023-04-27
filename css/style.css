@@ -1,11 +1,96 @@
-h1{
-    background-color: aqua;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.backgrounVerde{
-    background-color: green;
+.colorVioleta{
+color: #d131e9;
 }
 
-.backgrounRojo{
-    background-color: red;
+body {
+    padding: 50px;
+    margin-left: 20px;
+    border: hwb(60 7% 2% / 0.784)20px;
 }
+
+body h1{
+    
+    color: #55b1e6;
+}
+
+section{
+    padding: 20px;
+    margin: 20px;
+}
+
+
+section article p{
+    background-color: #eb7070c8;
+}
+
+#nombreid{
+    text-align: right;
+}
+
+section article h1{
+    color: aquamarine;
+}
+
+.textoCenter {
+    text-align: center;
+}
+
+.fontStyle{
+    font-style: italic;
+
+}
+.fontWeight{
+    font-weight: bold;
+
+}
+
+.decorarTexto{
+text-decoration: dashed; 
+}
+
+
+div {
+    color: red;
+    border: solid;
+    padding: 5px;
+    display: inline-block;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    height: 110px;
+    overflow: hidden;
+}
+div{
+    color: green;
+}
+.boxCaja {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: #00d9ff;
+    color: white;
+}
+
+.flex-container{
+    display: flex;
+}
+
+span a{
+    margin-left: 20px;
+}
+
+@media (min-width:400px) and (max-width: 768px) {
+    body{
+        font-size: 16px;
+    }
+}
+
+@media ( min-width:900px) {
+    body{ font-size: 24px;}
+    }
