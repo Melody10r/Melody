@@ -1,61 +1,71 @@
 *{
-    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-}
-body{
-    margin: 20px;
-    padding: 10px;
-    border: 3px dashed salmon;
+    font-style:normal;
 }
 
 body h1{
     color: #55b1e6;
+    text-decoration: dashed;
+    text-align: center;
 }
 
 section article p{
-    color: #eb7070c8;
+    color: #2e98f6c8;
 }
 
-section article h1{
-    color: aquamarine;
+.letraNegrita{ 
+    font-weight: bold;
 }
 
-.decorarTexto{
-text-decoration: dashed; 
+img {
+    width: 70%;
+    height: 30%;
 }
 
-
-div {
-    font-size: 32px;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100px;
-    height: 110px;
-    overflow: hidden;
-}
-
-div{
-    color: green;
-}
-
-.flex-container{
+.flex-container {
     display: flex;
 }
 
-span a{
-    margin-left: 20px;
+nav span a {
+    margin-left: 50px;
 }
 
-@media (min-width:400px) and (max-width: 768px) {
-    body{ margin: 20px;
-        padding: 10px;
-        border: 3px dashed salmon;
-    }
+.barradeInfo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0px auto 0;
+    width: 100%;
+    height: 25px;
+    background: #50c3fd;
+    border-radius: 0px;
+    font-size: 0;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+    text-align: center;
+}
+nav a {
+    font-size: 15px;
+    color: black;
+    text-decoration: var();
+    line-height: 20px;
+    padding: 0 30px;
+    position: relative;
+    text-align: left;
 }
 
-@media ( min-width:768px) and (max-width: 900px) {
-    body { margin: 20px;
-        padding: 10px;
-        border: 3px dashed salmon;
+
+@media (min-width: 481px){
+    
 }
+
+
+@media (min-width: 769px){
+    /* Laptop */
+
+}
+
+
+@media (min-width: 1024px){
+    /* Desktop */
+
 }
