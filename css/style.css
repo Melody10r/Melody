@@ -55,7 +55,7 @@ section img {
     text-align: center;
 }
 
-nav a {
+nav span a {
     color: black;
     text-decoration: var();
     line-height: 20px;
@@ -74,13 +74,14 @@ nav a {
     border-top-right-radius: 9px;
 }
 
-header img {
+header div img {
     background-image: url(carpetaicono.jpg);
     background-image: url(comosecreanlaspruebas.jpg);
     background-image: url(difderesultados.jpg);
     background-image: url(inforeleva.jpg);
     height: 50px;
     width: 5%;
+    text-align: center;
 }
 
 .columnasMasinfo {
