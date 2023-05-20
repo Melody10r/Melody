@@ -74,21 +74,39 @@ nav span a {
     border-top-right-radius: 9px;
 }
 
-header div img {
+main span img {
     background-image: url(carpetaicono.jpg);
     background-image: url(comosecreanlaspruebas.jpg);
     background-image: url(difderesultados.jpg);
     background-image: url(inforeleva.jpg);
-    height: 50px;
-    width: 5%;
+    height: 75px;
+    width: 25%;
+    margin: 5%;
     text-align: center;
 }
 
 .columnasMasinfo {
     display: flex;
     flex-direction: row;
+    line-height: 200%;
 }
 
+.guiaYoutube {
+    border: solid 1px ;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+img {
+    height: 100px;
+    width: 20%;
+    border: 0;
+    background-color:red;
+    text-align: center;
+    display: flex;
+}
 
 @media (min-width: 400px) {
     * { 
