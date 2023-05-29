@@ -7,16 +7,61 @@
         <title>¿Cómo es Aprender</title>
         <link rel="stylesheet" href="../css/style.css">
     </head>
-    <body>
+    <body class="bodyColor">
+        <nav>
+            <h1>Hola!</h1>
+            <button onclick="saludar()">Ingresa tu nombre</button>
+            <script src="../scripts/carpeta.js">
+            function saludar() {
+                var nombre = prompt("Por favor, ingresa tu nombre:");
+                alert("¡Hola, " + nombre + "!");
+            }
+            </script>
+        </nav>
+
         <header>
-            Te invitamos a participar de nuestra encuenta on-line. Si sos Buenos Aires y tenes entre 10 y 16 años, esta prueba será realizada en todas las escuelas primarias y secundarias.
-
+            <p> <b>Formulario de registro al operativo Aprender. </b>
+            <br>
+            Estos son los requisitos necesarios para participar:
+            Si sos Argentino o tenes residencia permanente y tu hijo se encuentra en 6to grado, te proponemos llenar este formulario con el fin de obtener un promedio de cuantos alumnos van a realizar la prueba. </p>
         </header>
+        <br>
 
-        <div class="guiaYoutube"> <img src="../images/logoyoutube.jpg" alt="logoyoutube"> <a href="https://www.youtube.com/playlist?list=PLGMEzCPQMd1eCE7ArtK9DuUiGuo5KmSZA" target="_blank" rel="noopener noreferrer">
-            <div>
-            <h3>¿Cómo es Aprender 2021?</h3>
-            </div>
+        <form>
+            <fieldset>
+                <legend><label for="FORMULARIO"> Registrate:</label></legend>
+                <label for="nombre"> <div class="colorFormulario"> Nombre del alumno:</div> </label> 
+                <input type="nombre" name="nombre" id="nombre"/>
+                
+
+                <label for="telefono"> <div class="colorFormulario" > Teléfono de contacto: </div> </label> 
+                <input type="number" name="telefono" id="telefono">
+                
+                <label for="email"> <div class="colorFormulario"> Correo Electrónico:</div>  </label>
+                <input type="email" name="email" id="email">
+                
+                
+                <label for="horario"> <div class="colorFormulario" > Horario escolar: </div> </label>
+                <select name="horario escolar">
+                    <option value="1"> Turno mañana</option>
+                    <option value="2"> Turno tarde</option>
+                </select>
+                
+
+                <label for="comentarios"> <div class="colorFormulario" > Comentarios: </div> </label>
+                <textarea name="area" id="area" cols="30" rows="10"></textarea>
+                
+
+                <input type="submit"/>
+                <input type="reset" value="Borrar"/>
+            </fieldset>
+            </form>
+
+        <div class="guiaYoutube"> <a href="https://www.youtube.com/playlist?list=PLGMEzCPQMd1eCE7ArtK9DuUiGuo5KmSZA" target="_blank" rel="noopener noreferrer">
+            <img src="../images/logoyoutube.jpg" alt="logoyoutube"> 
         </div>
+        
+        <h3>¿Cómo es Aprender 2021?</h3>
+        
     </body>
-</html>
+</html> 

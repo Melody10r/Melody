@@ -8,7 +8,7 @@
     font-size:  12px;
 }
 
-body{ 
+.bodyColor{ 
     background-color:hsla(0, 12%, 93%, 0.946);
     color: hsl(0, 0%, 0%);
 }
@@ -35,13 +35,35 @@ section img {
 
 .flexContainer {
     display: flex;
+}
+main{
     flex-direction: row;
     flex-wrap: nowrap;
     flex-flow:column wrap;
     justify-content:center;
     width: 90%;
     padding-left: 50px;
-    margin-right: 15px;
+    margin-right: 15px
+}
+
+section{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-flow:column wrap;
+    justify-content:center;
+    width: 90%;
+    padding-left: 50px;
+    margin-right: 15px
+}
+
+div{   
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-flow:column wrap;
+    justify-content:center;
+    width: 90%;
+    padding-left: 50px;
+    margin-right: 15px
 }
 
 .barradeInfo{
@@ -91,21 +113,29 @@ main span img {
     line-height: 200%;
 }
 
-.guiaYoutube {
-    border: solid 1px ;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
 
+.guiaYoutube {
+    border: solid 5px red;
+    border-radius: 10px;
+    background-color: rgb(255, 0, 225);
 }
 
-img {
-    height: 100px;
-    width: 20%;
-    border: 0;
-    background-color:red;
-    text-align: center;
+
+div img {
     display: flex;
+    min-width: 10%;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.colorFormulario {
+    color: #2CB9EE;
+}
+
+html { 
+    background-image: url(aprender.jpg);
+    background-position:unset;
+    background-size: 100%;
 }
 
 @media (min-width: 400px) {
