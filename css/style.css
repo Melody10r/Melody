@@ -2,7 +2,7 @@
     margin: 1px;
     padding: 1px;
     border: 1px;
-    width: 100%;
+    width: 90vw;
     font-family:"Encode Sans",Arial,sans-serif;
     font-style:normal;
     font-size:  12px;
@@ -31,6 +31,7 @@ section img {
     background-image: url(aprender2021.jpg);
     height: 200px;
     width: 100%;
+    border-radius:2vw;
 }
 
 .flexContainer {
@@ -114,10 +115,9 @@ main span img {
 }
 
 
-.guiaYoutube {
-    border: solid 5px red;
-    border-radius: 10px;
-    background-color: rgb(255, 0, 225);
+iframe img {
+    background-image: 100vw;
+
 }
 
 
@@ -132,10 +132,10 @@ div img {
     color: #2CB9EE;
 }
 
-html { 
+body header h1{ 
     background-image: url(aprender.jpg);
-    background-position:unset;
-    background-size: 100%;
+    background-position:center top;
+    background-size: 100vw;
 }
 
 @media (min-width: 400px) {
