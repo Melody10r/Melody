@@ -8,19 +8,16 @@
         <link rel="stylesheet" href="../css/style.css">
     </head>
 
-    <body class="bodyColor">
-        <nav>
+    <body>
+        <nav id="miBoton">
             <h1>Hola!</h1>
             <button onclick="saludar()">Ingresa tu nombre</button>
             <script src="../scripts/carpeta.js">
-            function saludar() {
-                var nombre = prompt("Por favor, ingresa tu nombre:");
-                alert("¡Hola, " + nombre + "!");
-            }
+            function saludar();
             </script>
         </nav>
 
-        <header>
+        <header class="flexContainer">
             <p> <b>Formulario de registro al operativo Aprender. </b>
             <br>
             Estos son los requisitos necesarios para participar:
@@ -28,7 +25,7 @@
         </header>
         <br>
 
-        <form>
+        <form class="flexContainer">
             <fieldset>
                 <legend><label for="Formulario"> Registrate:</label></legend>
                 <label for="nombre" class="colorFormulario"> Nombre del alumno:</label> 
@@ -52,15 +49,14 @@
                 <label for="comentarios" class="colorFormulario" > Comentarios: </label>
                 <textarea name="area" id="area" cols="30" rows="10"></textarea>
                 
-                <input button type="submit"></button> </input>
+                <input type="submit"> </button> 
                 <input type="reset" value="Borrar"/>
             </fieldset>
             </form>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLGMEzCPQMd1eCE7ArtK9DuUiGuo5KmSZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-            <img src="../images/logoyoutube.jpg" alt="logoyoutube"> 
-            <h3>¿Cómo es Aprender 2021?</h3>
+        <h3>¿Cómo es Aprender 2021?</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLGMEzCPQMd1eCE7ArtK9DuUiGuo5KmSZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen src="../images/logoyoutube.jpg" alt="logoyoutube"> 
         </iframe>
-
-        </body>
+        
+    </body>
 </html> 
