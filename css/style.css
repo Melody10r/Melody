@@ -1,30 +1,28 @@
 body{
-    font-family:"Encode Sans",Arial,sans-serif;
-    font-style:normal;
-    font-size:  1rem;
     background-color:#efeaeaf1; 
-    justify-content: space-between;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style:normal;
+    font-size: 1rem;
 }
-
 
 .boxModeling {
     display: block;
+    border: 0 solid black;
+    margin: 1px; 
+    padding: 10px 0;
     width: 100%;
-    margin: 0; 
-    padding: 0;
-    border: 1px solid black;
 }
-
 
 .titulos{
     font-size: 1,2rem;
     font-weight: bold;
     font-style:initial;
-    text-align: center;
+    text-align:center;
 }
 
-ul li{
-    margin: 5px;
+.parrafo {
+    margin-left: 10%;
+    width: 70%;
 }
 
 .letraNegrita{ 
@@ -36,21 +34,26 @@ ul li{
     background-image: url(aprender2021.jpg);
     border-radius:15px;
     height: 15vw;
-    width: 100vw;
+    width: 100%;
 }
 
 .flexContainer {
     display: flex;
 }
 
-
 .flexDireccion{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 100%;
+    flex-direction: row;
+    justify-content: center;
     max-width: 400px;
+    width: 100%;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .enlaceResultados{   
@@ -58,18 +61,17 @@ ul li{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content:center;
-    width: 90%;
+    width: 100%;
 }
-
 
 .barraNav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background: linear-gradient(to left, #6dadf5, #84d5f0);
     color: #FFF;
-    height: 7%;
-    padding: 0 10px;
+    height: 8%;
+    justify-content: space-between;
+    padding: 0;
     position: fixed;
     top:0;
     width: 100%;
@@ -86,8 +88,66 @@ ul li{
     background-size: cover;
     border-radius: 15px;
     height: 10vw;
-    width: 110%;
+    width: 100%;
 }
+
+.piePagina{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+section{
+    display: block;
+    padding: 30px 0;
+}
+
+.marginP{
+    margin-bottom: 40px;
+}
+
+/*revisar*/
+.panelPiepagina {  
+    box-sizing: border-box;
+    font-size: 1,4em;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0,5em 0  0,7em 0;
+}
+
+.social-share{
+    margin: 0;
+    min-height: 32px;
+    overflow: auto;
+}
+
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none; 
+}
+
+.iconosRedes{
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 1;
+}
+
+.iconoFace{
+    content: "\f61b";
+}
+
+.posicionIconos{
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: 1px;
+}
+/*hasta aca*/
 
 .imagenesDos{ 
     background-image: url(carpetaicono.jpg);
@@ -100,50 +160,28 @@ ul li{
 .imagenFondo {
     background-image: url(../images/aprender.jpg);
     position: fixed;
-}
-
-.columna {
-    display: flex;
-    flex-direction: row;
+    top: 0;
 }
 
 .colorFormulario {
-    color: #2CB9EE;
+    color: #00EE;
+    float: right;
+    text-align: left;
 }
 
 #miBoton {
     position: center;
-
 }
 
 .formularioFormato{
     display: inline-block;
-    flex-wrap: wrap;
     align-items: flex-start;
+    flex-wrap: wrap;
     justify-content: space-between;
     text-align: left;
 }
 
-
 @media (min-width: 401px) and (max-width:768) and (orientation: landscape) {
-    *{
-        font-size: 10px;
-        text-align: center;
-    }
-
-    .barraNav {
-        height: 60px;
-        padding: 0 15px;
-    }
-    .infoBarra{
-        color: black;
-        padding: 10px;
-    }
-
-    ul li{
-        margin: 10px;
-    }
-
     .titulos{
         font-size: 15px;
         font-weight: bold;
@@ -159,14 +197,6 @@ ul li{
 }
 
 @media  (min-width: 769px) and (max-width:1339px) and (orientation: landscape){
-    *{
-        font-size: 16px;
-    }
-
-    .barraNav{
-    height: 80px;
-    }
-
     .imagenPrincipal{
         background-image: url(aprender2021.jpg);
         width: 100%;
@@ -183,17 +213,10 @@ ul li{
 
 
 @media (max-width: 1440px) and (orientation: landscape) {
-    *{
-        font-size: 2vw;
-    }
 
-
-    .barraNav {
-        height: 5%;
-    }
-
-    .infoBarra{
-        color: black;
+    body{
+        font-size: 5vw;
+        line-height: 2rem;
     }
 
     .titulos{
@@ -207,8 +230,9 @@ ul li{
         max-width: 1440px;
     }
 
-    p{
-        width: 100%;
+    .parrafo {
+        margin-left: 5%;
+        text-align:justify;
     }
 }
 
