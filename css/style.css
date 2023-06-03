@@ -1,27 +1,30 @@
-*{
+body{
     font-family:"Encode Sans",Arial,sans-serif;
     font-style:normal;
-    font-size:  12px;
-    align-items:normal;
+    font-size:  1rem;
+    background-color:#efeaeaf1; 
+    justify-content: space-between;
 }
 
-body{ 
-    background-color:#efeaeaf1; 
-    border: 1px solid #efeaeaf1;
-    margin: 1%;
-    padding: 1%;
-    width: 100vw;
+
+.boxModeling {
+    display: block;
+    width: 100%;
+    margin: 0; 
+    padding: 0;
+    border: 1px solid black;
 }
+
 
 .titulos{
-    font-size: 32px;
+    font-size: 1,2rem;
     font-weight: bold;
     font-style:initial;
     text-align: center;
 }
 
 ul li{
-    margin: 15px;
+    margin: 5px;
 }
 
 .letraNegrita{ 
@@ -33,19 +36,21 @@ ul li{
     background-image: url(aprender2021.jpg);
     border-radius:15px;
     height: 15vw;
-    width: 90vw;
-    
+    width: 100vw;
 }
 
 .flexContainer {
     display: flex;
 }
 
+
 .flexDireccion{
-    flex-direction: row;
-    flex-flow:column wrap;
-    justify-content:center;
-    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
 }
 
 .enlaceResultados{   
@@ -53,22 +58,26 @@ ul li{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content:center;
-    width: 90vw;
+    width: 90%;
 }
 
-.barradeInfo{
-    background:#2CB9EE;
-    height: 25px;
-    left: 0;
+
+.barraNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to left, #6dadf5, #84d5f0);
+    color: #FFF;
+    height: 7%;
+    padding: 0 10px;
     position: fixed;
-    text-align: center;
-    top: 0;
-    width: 100vw;
+    top:0;
+    width: 100%;
 }
 
 .infoBarra{
     color: black;
-    padding: 50px;
+    padding: 3vw;
     text-decoration: nav();
 }
 
@@ -76,15 +85,21 @@ ul li{
     background-position: center;
     background-size: cover;
     border-radius: 15px;
-    min-height: 150px;
+    height: 10vw;
+    width: 110%;
 }
 
-.imagenesDos{
+.imagenesDos{ 
     background-image: url(carpetaicono.jpg);
     background-image: url(comosecreanlaspruebas.jpg);
     background-image: url(difderesultados.jpg);
     background-image: url(inforeleva.jpg);
     width: 10vw;
+}
+
+.imagenFondo {
+    background-image: url(../images/aprender.jpg);
+    position: fixed;
 }
 
 .columna {
@@ -98,28 +113,102 @@ ul li{
 
 #miBoton {
     position: center;
+
+}
+
+.formularioFormato{
+    display: inline-block;
+    flex-wrap: wrap;
     align-items: flex-start;
-
+    justify-content: space-between;
+    text-align: left;
 }
 
 
-@media (min-width: 400px) {
-    * { 
-        font-size: 14px;
+@media (min-width: 401px) and (max-width:768) and (orientation: landscape) {
+    *{
+        font-size: 10px;
+        text-align: center;
     }
+
+    .barraNav {
+        height: 60px;
+        padding: 0 15px;
+    }
+    .infoBarra{
+        color: black;
+        padding: 10px;
+    }
+
+    ul li{
+        margin: 10px;
+    }
+
+    .titulos{
+        font-size: 15px;
+        font-weight: bold;
+        font-style:initial;
+        text-align: center;
+    }
+
+    .flexDireccion {
+        min-width: 401px;
+        max-width: 768px;
+    }
+
 }
 
-@media  (min-width: 768px){
+@media  (min-width: 769px) and (max-width:1339px) and (orientation: landscape){
     *{
         font-size: 16px;
     }
+
+    .barraNav{
+    height: 80px;
+    }
+
+    .imagenPrincipal{
+        background-image: url(aprender2021.jpg);
+        width: 100%;
+    }
+    ul li{
+        margin: 15px;
+    }
+
+    .flexDireccion {
+        min-width: 769px;
+        max-width: 1339px;
+    }
 }
 
 
-@media (min-width: 1024px){
+@media (max-width: 1440px) and (orientation: landscape) {
     *{
-        font-size: 18px;
+        font-size: 2vw;
     }
 
+
+    .barraNav {
+        height: 5%;
+    }
+
+    .infoBarra{
+        color: black;
+    }
+
+    .titulos{
+        font-size: 40px;
+        font-weight: bold;
+        font-style:initial;
+        text-align: center;
+    }
+
+    .flexDireccion{
+        max-width: 1440px;
+    }
+
+    p{
+        width: 100%;
+    }
 }
 
