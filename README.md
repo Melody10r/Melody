@@ -20,6 +20,12 @@ Comienzo a trabajar sobre lo que anote que me hace falta, para que los 3 archivo
 
 31/05:
 * modifique varias etiquetas en css.
-* me quedo pendiente mi 3er html
-* ir haciendo responsive
-* agregar más detalle
+* me quedo pendiente mi 3er html.
+* ir haciendo responsive.
+* agregar más detalle.
+
+
+5/06:
+*Finalize mi página principal.
+*agregué mi JS y lo vinculé correctamente.
+*me faltan terminar mis otros dos archivos html y estoy en condiciones de entregar (felicidad).

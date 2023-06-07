@@ -8,38 +8,36 @@
         <link rel="stylesheet" href="../css/style.css">
     </head>
 
-    <body>
-        <nav id="miBoton">
-            <h1>Hola!</h1>
-            <button onclick="saludar()">Ingresa tu nombre</button>
-            <script src="../scripts/carpeta.js">
-            function saludar();
-            </script>
-        </nav>
+    <body class="boxModeling"> 
+        <header class="headerHtml3"> <br>
+            <h3>Formulario de registro al operativo Aprender.</h3>
+            <i><p>Requisitos para la inscripción:</p></i>
 
-        <header class="flexContainer">
-            <p> <b>Formulario de registro al operativo Aprender. </b>
-            <br>
-            Estos son los requisitos necesarios para participar:
-            Si sos Argentino o tenes residencia permanente y tu hijo se encuentra en 6to grado, te proponemos llenar este formulario con el fin de obtener un promedio de cuantos alumnos van a realizar la prueba. </p>
+            <ol>
+                <li>Debe ser Argentino o tener residencia permanente</li>
+                <li>Tu hijo deberá estar en 6° grado</li>
+                <li>El alumno debe tener más de 60% de asistencia</li>
+            </ol>
+
+            <p>Completa el formulario con el fin de obtener un promedio de cuántos alumnos van a realizar la prueba. </p>
+
         </header>
-        <br>
+        <br> <br>
 
         <form class="flexContainer formularioFormato">
-            <fieldset >
+            <fieldset class="fieldsetColor"> 
                 <legend><label for="Formulario"> Registrate:</label></legend>
-                <label for="nombre" > Nombre del alumno:</label> 
-                <input type="nombre" name="nombre" id="nombre"/> <br>
+                <label for="nombre" > Nombre del alumno:</label> <br>
+                <input type="nombre" name="nombre" id="nombre" required/> <br>
                 
-
-                <label for="telefono" > Teléfono de contacto: </label> 
+                <label for="telefono" > Teléfono de contacto: </label> <br>
                 <input type="number" name="telefono" id="telefono"> <br>
                 
-                <label for="email"> Correo Electrónico: </label>
-                <input type="email" name="email" id="email"><br>
+                <label for="email"> Correo Electrónico: </label><br>
+                <input type="email" name="email" id="email" required><br>
                 
                 
-                <label for="horario"> Horario escolar: </label>
+                <label for="horario"> Horario escolar: </label> <br>
                 <select name="horario escolar">
                     <option value="1"> Turno mañana</option>
                     <option value="2"> Turno tarde</option>
@@ -51,11 +49,22 @@
                 <input type="submit"> </button> 
                 <input type="reset" value="Borrar"/>
             </fieldset>
-            </form>
+        </form>
 
         <h3>¿Cómo es Aprender 2021?</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLGMEzCPQMd1eCE7ArtK9DuUiGuo5KmSZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen src="../images/logoyoutube.jpg" alt="logoyoutube"> 
-        </iframe>
-        
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLGMEzCPQMd1eCE7ArtK9DuUiGuo5KmSZA"  id="iframeFondo"></iframe>
+
+        <nav id="miBoton">
+            <h1>Hola!</h1>
+            <button onclick="saludar()">Ingresa tu nombre</button>
+            <script src="../scripts/carpeta.js">
+            </script>
+        </nav><br>
+
+        <footer><br>
+            <p>&copy; 2021 Ministerio de educación de la Nación.</p>
+        </footer>
+
+        <script src="../scripts/carpeta.js"></script>
     </body>
 </html> 

@@ -1,5 +1,5 @@
+/*Ro si me queres dar algun consejito para que quede un poco más formal lo tomo con gustoo*/
 body{
-    background-color:#efeaeaf1; 
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-style:normal;
     font-size: 1rem;
@@ -8,15 +8,14 @@ body{
 .boxModeling {
     display: block;
     border: 0 solid black;
-    margin: 1px; 
-    padding: 10px 0;
+    margin: 0; 
+    padding: 0;
     width: 100%;
 }
 
 .titulos{
     font-size: 1,2rem;
     font-weight: bold;
-    font-style:initial;
     text-align:center;
 }
 
@@ -39,15 +38,6 @@ body{
 
 .flexContainer {
     display: flex;
-}
-
-.flexDireccion{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    max-width: 400px;
-    width: 100%;
 }
 
 h2 {
@@ -103,52 +93,6 @@ section{
     padding: 30px 0;
 }
 
-.marginP{
-    margin-bottom: 40px;
-}
-
-/*revisar*/
-.panelPiepagina {  
-    box-sizing: border-box;
-    font-size: 1,4em;
-    font-weight: 700;
-    line-height: 1.1;
-    margin: 0,5em 0  0,7em 0;
-}
-
-.social-share{
-    margin: 0;
-    min-height: 32px;
-    overflow: auto;
-}
-
-.list-inline {
-    padding-left: 0;
-    margin-left: -5px;
-    list-style: none; 
-}
-
-.iconosRedes{
-    display: inline-block;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    line-height: 1;
-}
-
-.iconoFace{
-    content: "\f61b";
-}
-
-.posicionIconos{
-    position: absolute; 
-    width: 1px; 
-    height: 1px; 
-    padding: 0; 
-    margin: 1px;
-}
-/*hasta aca*/
-
 .imagenesDos{ 
     background-image: url(carpetaicono.jpg);
     background-image: url(comosecreanlaspruebas.jpg);
@@ -159,8 +103,27 @@ section{
 
 .imagenFondo {
     background-image: url(../images/aprender.jpg);
+    background-position: top;
+    max-width: 400px;
     position: fixed;
     top: 0;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.columna{
+    background-color: #f2f2f2;
+    padding: 10%;
+}
+
+.tituloDos{
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 .colorFormulario {
@@ -169,17 +132,68 @@ section{
     text-align: left;
 }
 
+
 #miBoton {
-    position: center;
+    background-color:#6dadf5 ;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    left: 40%;
+    position: fixed;
+    text-align: center;
+    top: 0;
 }
 
-.formularioFormato{
-    display: inline-block;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-align: left;
+.headerHtml3{
+    margin-left: 5%;
+    position: relative;
+    top: 10vw;
 }
+
+.fieldsetColor{
+    border: black 2px thick;
+    color: #6dadf5;
+    font-style: bold;
+} 
+
+.formularioFormato {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 10%;
+    max-width: 400px;
+}
+
+ol li {
+    color: #6dadf5;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+/* Acá no se que pasa que cuando reviso en consola se salen las etiquetas que le puse */
+#iframeFondo{
+    display: flex;
+    background-image: url(../images/logoyoutube.jpg);
+    background-color: red;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    cursor: pointer;
+    justify-content: center;
+    width: 100%;
+}
+
+footer{
+    background-color: #333;
+    padding: 2%;
+    text-align: center;
+    width: 100%;
+}
+
 
 @media (min-width: 401px) and (max-width:768) and (orientation: landscape) {
     .titulos{
@@ -189,50 +203,67 @@ section{
         text-align: center;
     }
 
-    .flexDireccion {
-        min-width: 401px;
-        max-width: 768px;
+    .formularioFormato{
+        margin: 0;
+        padding: 15%;
     }
 
 }
 
-@media  (min-width: 769px) and (max-width:1339px) and (orientation: landscape){
+@media  (min-width: 769px) and (max-width:1440px) and (orientation: landscape){
+    body{
+        font-size: 2rem;
+    }
+
+    .infoBarra{
+        padding: 1%;
+    }
+
     .imagenPrincipal{
         background-image: url(aprender2021.jpg);
         width: 100%;
     }
+
     ul li{
         margin: 15px;
     }
 
-    .flexDireccion {
-        min-width: 769px;
-        max-width: 1339px;
+    .tituloDos{
+        font-size: 2.5rem;
+    }
+
+    footer{
+        padding: 5%;
+    }
+
+    #miBoton{
+        font-size: 100%;
+    }
+
+    .formularioFormato{
+        max-width: 1100px;
+    }
+
+    #iframeFondo{
+        padding: 5%;
+    }
+
+    .headerHtml3{
+        margin-left: 20%;
     }
 }
 
-
-@media (max-width: 1440px) and (orientation: landscape) {
-
-    body{
-        font-size: 5vw;
-        line-height: 2rem;
+/*me confirmas si ve responsive, porque cuando veo en inspeccionar me sale bien en pantallas hasta 1440px pero cuando salgo en la pantalla de mi compu se ve mas chico, no se si será de más pixeles*/
+@media (min-width:1100px) and (max-width:1440px) and (orientation:landscape) {
+    .boxModeling {
+        max-width: 1300px;
+        margin: 0;
     }
 
-    .titulos{
-        font-size: 40px;
-        font-weight: bold;
-        font-style:initial;
-        text-align: center;
-    }
-
-    .flexDireccion{
-        max-width: 1440px;
-    }
-
-    .parrafo {
-        margin-left: 5%;
-        text-align:justify;
+    .headerHtml3{
+        margin-left: 10%;
+        padding: 5%;
     }
 }
+
 
