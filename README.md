@@ -29,3 +29,6 @@ Comienzo a trabajar sobre lo que anote que me hace falta, para que los 3 archivo
 *Finalize mi página principal.
 *agregué mi JS y lo vinculé correctamente.
 *me faltan terminar mis otros dos archivos html y estoy en condiciones de entregar (felicidad).
+
+8/06:
+* trabajo aprobado pero corrijo detalles para que quede mejor la página.

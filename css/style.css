@@ -1,4 +1,3 @@
-/*Ro si me queres dar algun consejito para que quede un poco más formal lo tomo con gustoo*/
 body{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-style:normal;
@@ -30,11 +29,16 @@ body{
 }
 
 .imagenPrincipal{
+    display: flex;
     background-image: url(aprender2021.jpg);
     border-radius:15px;
     height: 15vw;
-    width: 100%;
+    justify-content: center; 
+    align-items: center;
+    margin: 0 auto; 
+    width: 75%;
 }
+
 
 .flexContainer {
     display: flex;
@@ -44,14 +48,6 @@ h2 {
     display: block;
     font-size: 1.5em;
     font-weight: bold;
-}
-
-.enlaceResultados{   
-    background-position: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content:center;
-    width: 100%;
 }
 
 .barraNav {
@@ -73,14 +69,6 @@ h2 {
     text-decoration: nav();
 }
 
-.formatoDiv {
-    background-position: center;
-    background-size: cover;
-    border-radius: 15px;
-    height: 10vw;
-    width: 100%;
-}
-
 .piePagina{
     box-sizing: border-box;
     font-size: 16px;
@@ -93,6 +81,45 @@ section{
     padding: 30px 0;
 }
 
+.contactoRedes{
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.contactoEtiqueta {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.contactoEnlace {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contactoEnlace:hover {
+    text-decoration: underline;
+}
+
+
+.redesSociales {
+    display: inline-block;
+    margin-right: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.redesSociales a {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.redesSociales:hover {
+    color: #555;
+}
+
+/*segundo html*/
 .imagenesDos{ 
     background-image: url(carpetaicono.jpg);
     background-image: url(comosecreanlaspruebas.jpg);
@@ -107,6 +134,20 @@ section{
     max-width: 400px;
     position: fixed;
     top: 0;
+}
+
+.enlaceResultados{   
+    display: grid;
+    grid-template-columns:75%;
+    align-items: center;
+    justify-content:center;
+}
+
+.formatoDiv {
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    height: 10vw;
 }
 
 .gridContainer{
@@ -127,20 +168,42 @@ section{
 }
 
 .colorFormulario {
-    color: #00EE;
+    color:#007bff;
     float: right;
     text-align: left;
 }
 
+/*tercer html*/
+.barraNav3 {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.barraNav3 a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.barraNav3 a:hover {
+    background-color: #ddd;
+    color: black;
+}
 
 #miBoton {
-    background-color:#6dadf5 ;
+    background-color: #333;
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: bold;
-    left: 40%;
+    left: 65%;
     position: fixed;
     text-align: center;
     top: 0;
@@ -148,8 +211,6 @@ section{
 
 .headerHtml3{
     margin-left: 5%;
-    position: relative;
-    top: 10vw;
 }
 
 .fieldsetColor{
@@ -163,7 +224,6 @@ section{
     align-items: center;
     justify-content: center;
     margin: 0;
-    padding: 10%;
     max-width: 400px;
 }
 
@@ -173,7 +233,6 @@ ol li {
     padding-left: 20px;
 }
 
-/* Acá no se que pasa que cuando reviso en consola se salen las etiquetas que le puse */
 #iframeFondo{
     display: flex;
     background-image: url(../images/logoyoutube.jpg);
@@ -184,6 +243,7 @@ ol li {
     border-radius: 15px;
     cursor: pointer;
     justify-content: center;
+    margin-top: 0;
     width: 100%;
 }
 
@@ -194,8 +254,19 @@ footer{
     width: 100%;
 }
 
+.volverAinicio{
+    display: inline-block;
+    border-radius: 5px;
+    color: black;
+    padding: 10px 20px;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+.volverAinicio:Hover{
+    background-color: #4f9aef;
+}
 
-@media (min-width: 401px) and (max-width:768) and (orientation: landscape) {
+@media (min-width: 401px) and (max-width:768) {
     .titulos{
         font-size: 15px;
         font-weight: bold;
@@ -210,7 +281,7 @@ footer{
 
 }
 
-@media  (min-width: 769px) and (max-width:1440px) and (orientation: landscape){
+@media  (min-width: 769px) and (max-width:1440px) {
     body{
         font-size: 2rem;
     }
@@ -221,7 +292,7 @@ footer{
 
     .imagenPrincipal{
         background-image: url(aprender2021.jpg);
-        width: 100%;
+        width: 80%;
     }
 
     ul li{
@@ -232,12 +303,9 @@ footer{
         font-size: 2.5rem;
     }
 
-    footer{
-        padding: 5%;
-    }
-
     #miBoton{
-        font-size: 100%;
+        max-width: 1100px;
+        padding: 2%;
     }
 
     .formularioFormato{
@@ -245,24 +313,40 @@ footer{
     }
 
     #iframeFondo{
-        padding: 5%;
+        padding: 3%;
     }
 
     .headerHtml3{
         margin-left: 20%;
     }
-}
 
-/*me confirmas si ve responsive, porque cuando veo en inspeccionar me sale bien en pantallas hasta 1440px pero cuando salgo en la pantalla de mi compu se ve mas chico, no se si será de más pixeles*/
-@media (min-width:1100px) and (max-width:1440px) and (orientation:landscape) {
-    .boxModeling {
-        max-width: 1300px;
-        margin: 0;
+    .barraNav3 a {
+        display: block;
+        padding: 5%;
+        text-align: left;
     }
 
+}
+
+@media (min-width:1100px) and (max-width:1440px) {
     .headerHtml3{
         margin-left: 10%;
         padding: 5%;
+    }
+
+    #miBoton{
+    padding: 35px;
+    }
+
+
+    .barraNav3 {
+        font-size: 3rem;
+        padding: 0 50px;
+        }
+
+    .textoBienvenido{
+        display: flex;
+        margin-top:7%
     }
 }
 
