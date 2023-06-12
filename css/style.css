@@ -33,9 +33,7 @@ body{
     background-image: url(aprender2021.jpg);
     border-radius:15px;
     height: 15vw;
-    justify-content: center; 
-    align-items: center;
-    margin: 0 auto; 
+    margin:  auto; 
     width: 75%;
 }
 
@@ -57,7 +55,7 @@ h2 {
     color: #FFF;
     height: 8%;
     justify-content: space-between;
-    padding: 0;
+    padding: 1%;
     position: fixed;
     top:0;
     width: 100%;
@@ -65,7 +63,6 @@ h2 {
 
 .infoBarra{
     color: black;
-    padding: 3vw;
     text-decoration: nav();
 }
 
@@ -119,7 +116,27 @@ section{
     color: #555;
 }
 
+.noticiasAudio{
+    color: #555;
+    border-bottom: 1px solid #b4beba;
+    padding-bottom: 16px;
+    font-size: 85%;
+}
+
+.audioFormato{
+    width: 80%;
+    height: 54px;
+}
+
 /*segundo html*/
+
+.barraNav2 {
+    background-color: #6dadf5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .imagenesDos{ 
     background-image: url(carpetaicono.jpg);
     background-image: url(comosecreanlaspruebas.jpg);
@@ -164,11 +181,12 @@ section{
     color: #000;
     font-size: 1.2rem;
     font-weight: bold;
+    height: 2rem;
     text-align: center;
 }
 
 .colorFormulario {
-    color:#007bff;
+    color:#6dadf5;
     float: right;
     text-align: left;
 }
@@ -192,21 +210,23 @@ section{
 }
 
 .barraNav3 a:hover {
-    background-color: #ddd;
     color: black;
 }
 
 #miBoton {
-    background-color: #333;
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 10px;
+    font-size: 8px;
     font-weight: bold;
-    left: 65%;
+    left: 75%;
     position: fixed;
     text-align: center;
     top: 0;
+}
+
+.tamanoBoton{
+    font-size: 8px;
 }
 
 .headerHtml3{
@@ -224,7 +244,6 @@ section{
     align-items: center;
     justify-content: center;
     margin: 0;
-    max-width: 400px;
 }
 
 ol li {
@@ -235,6 +254,7 @@ ol li {
 
 #iframeFondo{
     display: flex;
+    align-items: center;
     background-image: url(../images/logoyoutube.jpg);
     background-color: red;
     background-size: cover;
@@ -243,8 +263,9 @@ ol li {
     border-radius: 15px;
     cursor: pointer;
     justify-content: center;
-    margin-top: 0;
-    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 75%;
 }
 
 footer{
@@ -274,6 +295,11 @@ footer{
         text-align: center;
     }
 
+    .barraNav{
+        height: 12%;
+        padding: 10vw;
+    }
+
     .formularioFormato{
         margin: 0;
         padding: 15%;
@@ -281,9 +307,13 @@ footer{
 
 }
 
-@media  (min-width: 769px) and (max-width:1440px) {
+@media  (min-width: 768px) and (max-width:1440px) {
     body{
         font-size: 2rem;
+    }
+
+    .barraNav{
+        height: 14%;
     }
 
     .infoBarra{
@@ -299,8 +329,13 @@ footer{
         margin: 15px;
     }
 
+    .audioFormato {
+        width: 50%;
+    }
+
     .tituloDos{
         font-size: 2.5rem;
+        height: 3.5rem;
     }
 
     #miBoton{
@@ -320,6 +355,10 @@ footer{
         margin-left: 20%;
     }
 
+    .barraNav3 {
+        height: 12%;
+    }
+
     .barraNav3 a {
         display: block;
         padding: 5%;
@@ -329,6 +368,11 @@ footer{
 }
 
 @media (min-width:1100px) and (max-width:1440px) {
+
+    .barraNav{
+        word-spacing: 15%;
+    }
+
     .headerHtml3{
         margin-left: 10%;
         padding: 5%;

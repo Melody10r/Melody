@@ -32,3 +32,5 @@ Comienzo a trabajar sobre lo que anote que me hace falta, para que los 3 archivo
 
 8/06:
 * trabajo aprobado pero corrijo detalles para que quede mejor la página.
+
+Finalize las correcciones de mi página web.
